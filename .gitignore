@@ -298,3 +298,4 @@ env/
 # ---- Node (Vue) ----
 node_modules/
 dist/
+chatbotaifolder/
