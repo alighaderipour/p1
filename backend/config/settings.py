@@ -35,10 +35,7 @@ SECRET_KEY = 'django-insecure-*zdnve5=ygo2h39a5((b+__!m#@(58cik4p#77=8n@7&ij&7tn
 DEBUG = True
 
 ALLOWED_HOSTS = [
-'localhost',
-'127.0.0.1',
-'192.168.47.128',
-'192.168.9.73'
+'*'
 ]
 
 
@@ -107,8 +104,11 @@ DATABASES = {
 }
 
 
-CORS_ALLOWED_ORIGINS = ['http://192.168.9.73', 'http://127.0.0.1', 'http://localhost:5173',
-                        'http://127.0.0.1:5173']
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = ['*']
+CORS_ALLOW_METHODS = ['GET', 'POST', 'OPTIONS']
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
